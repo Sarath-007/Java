@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Product</title>
+</head>
+<body>
+<h1> CUSTOMER INVOICE</h1>
+<form action='invoice.jsp' method='post'>
+
+Customer name:<input type="text" name="name"><br> <br>
+Customer address:<input  type="text" name="cadd"><br> <br>
+Seller name:<input type="text" name="sname"><br> <br>
+Seller address:<input type="text" name="sadd"><br> <br>
+Invoice number:<input type="number" name="number"><br> <br>
+Invoice date:<input type ="date"><br><br>
+Payment due:<input type ="date"><br><br>
+
+<table style=width:75%>
+  <tr>
+    
+    <th>Item Name</th>
+    <th>Quantity</th>
+
+  </tr>
+  <tr>
+    
+    <td style="text-align:center " ><input type ="text" name="item"></td>
+    <td style="text-align:center"><input type ="text" name="qty"></td>
+  
+    
+  </tr>
+ 
+<tr>
+    
+    <td style="text-align:center"><input type ="text" name="item2"></td>
+    <td style="text-align:center"><input type ="text" name="q2"></td>
+   
+    
+  </tr>
+
+</table><br>
+
+<input type="submit" value="invoice">
+</form>
+
+</body>
+</html>

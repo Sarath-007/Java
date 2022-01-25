@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form name="myForm" action="trial.jsp" method="post">
+  <div class="tb">
+  		<table style="width:100%" border="1" class="tb">
+  		<thead>
+  	    	<tr>
+  				<th>Items</th>
+  				<th>Quantity</th>
+  				<th>Price</th>
+  				<th>Amount</th>
+  			</tr>
+  		</thead>
+  		<tbody id="here">		
+  		</tbody>
+  		</table>
+   </div>
+   <input type="button" value="Add item" id="newentry">
+</form>
+   <script type="text/javascript">
+	$(document).ready(function(){
+		$("#newentry").click(function(){
+			var addcontrols="<tr>"
+				addcontrols+="<td><input type='text' name='Itemname'></td>"
+				addcontrols+="<td><input type='text' name='ItempQuantity'></td>"
+				addcontrols+="</tr>";
+				$("#here").append(addcontrols);
+		});
+	});
+</script>
+   <input type="button" value="Add item" id="newentry">
+</form>
+
+</body>
+</html>
